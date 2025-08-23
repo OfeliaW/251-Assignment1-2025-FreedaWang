@@ -16,12 +16,6 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
      
-      - name: Run PMD
-        run: mvn pmd:pmd
-      - name: Upload PMD results
-        uses: actions/upload-artifact@v4  
-        with:
-          name: pmd-reports
-          path: target/reports/pmd/
+      
       - name: Run tests
         run: mvn test
