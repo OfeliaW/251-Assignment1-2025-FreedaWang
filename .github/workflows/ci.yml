@@ -9,9 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4    # 建议升级到最新稳定版
+      - uses: actions/checkout@v4   
       - name: Set up JDK 21
-        uses: actions/setup-java@v4   # 建议升级到最新稳定版
+        uses: actions/setup-java@v4  
         with:
           java-version: '21'
           distribution: 'temurin'
@@ -20,7 +20,7 @@ jobs:
       - name: Run PMD
         run: mvn pmd:pmd
       - name: Upload PMD results
-        uses: actions/upload-artifact@v4  # 关键修复：升级到 v4
+        uses: actions/upload-artifact@v4  
         with:
           name: pmd-reports
           path: target/reports/pmd/
