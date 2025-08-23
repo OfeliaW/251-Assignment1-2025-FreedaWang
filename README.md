@@ -3,7 +3,7 @@
 # Advanced Text Editor
 
 ## Team Members
-- **Member 1**: Freeda Wang(ID:20040510)
+- **Member 1**: Freeda Wang
 
 ## Description
 A Java-based text editor with syntax highlighting, PDF export, and advanced file handling capabilities.
